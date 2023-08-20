@@ -1,0 +1,252 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e0e8ff;
+}
+
+.img-background {
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  margin: 10rem auto 2rem;
+
+  width: 450px;
+  height: 697px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.headr {
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding: 2.6rem 4.8rem 0 4.8rem;
+}
+
+.article {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  padding: 1.7rem 4.8rem 4.5rem 4.8rem;
+  color: #717fa6;
+}
+
+.plane {
+  text-align: left;
+  background-color: #f7f9ff;
+  border-radius: 15px;
+  /* padding: 0 4.8rem 0 4.8rem; */
+
+  display: flex;
+
+  margin: 0 4.8rem 0 4.8rem;
+}
+
+.plane-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-icon {
+  padding: 2.5rem 2rem 2.5rem 2.4rem;
+}
+
+.annual {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #1f2e55;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #717fa6;
+}
+
+.btn-Change {
+  color: #382ae1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 68px;
+  text-decoration: underline;
+
+  padding: 4rem 0 0 3.1rem;
+}
+
+.btn-payment:link,
+.btn-payment:visited {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: #382ae1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  border-radius: 11px;
+  border: none;
+  display: block;
+  text-decoration: none;
+
+  padding: 1.2rem 10rem;
+  margin: 32px 28px 0 40px;
+}
+
+.btn-payment:hover,
+.btn-payment:active {
+  cursor: pointer;
+  background-color: #766cf1;
+}
+
+.brtn-orde:link,
+.brtn-orde:visited {
+  color: #717fa6;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: none;
+  margin-top: 3.2rem;
+  text-decoration: none;
+  border: none;
+  display: block;
+}
+
+.brtn-orde:hover,
+.brtn-orde:active {
+  cursor: pointer;
+  color: #1f2e55;
+}
+
+/************************/
+/* BELOW 752px (Phones)*/
+/************************/
+
+@media (max-width: 47em) {
+  .container {
+    width: 327px;
+    height: 567px;
+  }
+  .img-background {
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+  }
+
+  .headr {
+    font-size: 2.2rem;
+    padding: 2rem 3.2rem 0 3.2rem;
+  }
+
+  .article {
+    font-size: 1.5rem;
+    padding: 1.6rem 3.2rem 2.4rem 3.2rem;
+  }
+
+  .plane {
+    margin: 0 2.4rem 0 2.4rem;
+  }
+
+  .img-icon {
+    padding: 1.7rem 2rem 1.6rem 1.6rem;
+  }
+
+  .annual {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+  }
+
+  .btn-Change {
+    padding: 3rem 0 0 0;
+    margin-left: 50px;
+  }
+
+  .btn-payment:link,
+  .btn-payment:visited {
+    padding: 14px 63px;
+    margin: 32px 24px 0 24px;
+  }
+
+  .brtn-orde:link,
+  .brtn-orde:visited {
+    margin-top: 2.4rem;
+  }
+}
