@@ -1,0 +1,218 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0d192c;
+}
+
+.container {
+  width: 350px;
+  height: 596px;
+  font-family: "Outfit", sans-serif;
+  margin: 5rem auto 2rem;
+  background: #15263f;
+  border-radius: 1.5rem;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+}
+
+.iconeview {
+}
+
+/* .iconeview {
+  position: absolute;
+  top: 148px;
+  left: 150px;
+}
+
+.iconeview:hover,
+.iconeview:active {
+} */
+
+.man-img {
+  width: 100%;
+  padding: 2.4rem;
+  border-radius: 2rem;
+}
+
+.header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+
+  padding: 0 0 1.6rem 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  color: #00fff8;
+}
+
+.article {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  padding-left: 2.4rem;
+  color: #8bacd9;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2e405a;
+
+  padding: 2.4rem 2.6rem 2.4rem 2.4rem;
+}
+
+.number {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00fff8;
+}
+
+.icone {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.days {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8bacd9;
+}
+
+.flex-2 {
+  display: flex;
+}
+
+.creation {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8bacd9;
+  display: inline-block;
+  padding-top: 2.2rem;
+}
+
+.jules:link,
+.jules:visited {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 2.2rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.jules:hover,
+.jules:active {
+  color: #00fff8;
+  /* cursor: pointer; */
+}
+
+.foter-img {
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  margin: 1.6rem 1.6rem 0 2.4rem;
+}
+
+/************************/
+/* BELOW 384px (Phones)*/
+/************************/
+
+@media (max-width: 24em) {
+  .container {
+    width: 327px;
+    height: 543px;
+  }
+  .header {
+    padding: 0 0 1.2rem 2.4rem;
+  }
+
+  .flex {
+    padding: 1.6rem 2.6rem 1.6rem 2.4rem;
+  }
+
+  .creation {
+    font-size: 1.5rem;
+  }
+  .jules:link,
+  .jules:visited {
+    font-size: 1.5rem;
+  }
+}
