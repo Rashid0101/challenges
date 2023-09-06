@@ -1,0 +1,143 @@
+/************************/
+/* BELOW 768PX (Tablats)*/
+/************************/
+
+@media (max-width: 48em) {
+  .nav-flex {
+    padding: 3.1rem 4rem 0 3.9rem;
+  }
+
+  .logo-nav {
+    padding: 14px;
+  }
+
+  .btn-nav:link,
+  .btn-nav:visited {
+    padding: 15px 31px;
+  }
+
+  .headr {
+    font-size: 4rem;
+    padding: 10.5rem 0 2.5rem 3.9rem;
+    width: 440px;
+  }
+  .text-hero {
+    font-size: 1.6rem;
+    padding: 0 8.6rem 3.4rem 3.9rem;
+    width: 51.7rem;
+  }
+
+  .btn-hero:link,
+  .btn-hero:visited {
+    margin-left: 3.9rem;
+  }
+
+  .img-hero {
+    max-width: 84%;
+    top: -35px;
+    right: -228px;
+  }
+
+  .container-grid {
+    grid-template-columns: 339px 339px;
+    grid-template-rows: 259px 259px 259px;
+  }
+
+  .heder-grid {
+    font-size: 2rem;
+    padding: 56px 20px 20px 32px;
+  }
+
+  .text-min {
+    font-size: 2.4rem;
+    line-height: 32px;
+  }
+
+  .text-min p {
+    padding: 5.6rem 3.2rem 0 3.2rem;
+  }
+
+  .text-grid {
+    font-size: 1.6rem;
+    padding: 0 2.2rem 0 3.2rem;
+  }
+
+  .logo-light {
+    width: 94px;
+    height: 25px;
+    margin: 46px 0 0 4rem;
+  }
+
+  .btn-footer:link,
+  .btn-footer:visited {
+    margin: 3.2rem 3.9rem 2.4rem 0;
+  }
+}
+/************************/
+/* BELOW 412PX (Mobile)*/
+/************************/
+
+@media (max-width: 28em) {
+  .nav-flex {
+    padding: 2.2rem 1.6rem 0 1.6rem;
+  }
+
+  .logo-nav {
+    width: 118px;
+    height: 53px;
+  }
+
+  .btn-nav:link,
+  .btn-nav:visited {
+    padding: 12px 24px;
+  }
+
+  .headr {
+    font-size: 4rem;
+    padding: 10.2rem 0 2.6rem 1.6rem;
+    width: 460px;
+  }
+
+  .text-hero {
+    font-size: 1.6rem;
+    padding: 0 0 3.4rem 1.6rem;
+    width: 31.7rem;
+  }
+
+  .btn-hero:link,
+  .btn-hero:visited {
+    margin-left: 1.6rem;
+  }
+
+  .img-hero {
+    max-width: 100%;
+    top: 513px;
+    right: 18px;
+  }
+
+  .container-grid {
+    grid-template-columns: 343px;
+    grid-template-rows: 120px;
+    row-gap: 4rem;
+    margin-bottom: 8rem;
+    margin-top: 36rem;
+  }
+
+  .text-min {
+    height: 120px;
+  }
+
+  .text-min p {
+    padding: 2.4rem 3.2rem 0 2.8rem;
+  }
+
+  .btn-footer:link,
+  .btn-footer:visited {
+    margin: 3.2rem 1.6rem 2.4rem 0;
+  }
+
+  .logo-light {
+    width: 94px;
+    height: 25px;
+    margin: 46px 0 0 1.6rem;
+}
