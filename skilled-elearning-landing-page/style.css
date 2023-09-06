@@ -1,0 +1,294 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* max-width: 1440px; */
+  overflow-x: hidden;
+  position: relative;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.8rem 16.5rem 0 16.5rem;
+}
+
+.logo-nav {
+  padding: 1.3rem;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2.8rem;
+  padding: 14px 30px;
+  background-color: #13183f;
+  display: inline-block;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+  background-color: #83869a;
+}
+
+.section-hero {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.flex-img {
+  width: 150rem;
+}
+
+.headr {
+  font-size: 5.6rem;
+  font-weight: 800;
+  color: #13183f;
+  display: inline-block;
+  padding: 18.5rem 0 2.9rem 16.5rem;
+  width: 780px;
+}
+
+.img-hero {
+  max-width: 100%;
+  /* margin: -182px 0 0 277px; */
+  position: absolute;
+  top: -122px;
+  right: -291px;
+  overflow: hidden;
+}
+
+.text-hero {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: #83869a;
+  padding: 0 8.6rem 4rem 16.5rem;
+  width: 69.7rem;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3.1rem;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  margin-left: 16.5rem;
+  padding: 15px 27px;
+}
+
+.btn-hero:hover,
+.btn-hero:active {
+  background: var(
+    --gradient-1-hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+
+/* ******************** */
+/* SECTION */
+/* ******************** */
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 322px 322px;
+  row-gap: 8rem;
+  column-gap: 3rem;
+  justify-content: center;
+  margin-top: 26rem;
+  margin-bottom: 14rem;
+
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+.secnde {
+  background-color: #f0f1ff;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  position: relative;
+  border-radius: 15px;
+}
+
+.logo {
+  position: absolute;
+  top: -25px;
+  left: 32px;
+}
+
+.heder-grid {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #13183f;
+  display: inline-block;
+  padding: 64px 20px 20px 32px;
+}
+
+.text-min {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4rem;
+  color: #fff;
+  border-radius: 15px;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+
+.text-min p {
+  padding: 6.4rem 3.2rem 0 3.2rem;
+}
+
+.text-grid {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: #83869a;
+  padding: 0 2.5rem 0 3.2rem;
+}
+
+.btn-grid:link,
+.btn-grid:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f74780;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* margin: 20px 20px 20px 3.2rem; */
+  margin-left: 3.2rem;
+}
+
+.btn-grid:hover,
+.btn-grid:active {
+  color: #ffa7c3;
+}
+
+/* ******************** */
+/* FOOTER */
+/* ******************** */
+
+.footer {
+  background-color: #13183f;
+  display: flex;
+  justify-content: space-between;
+  /* clear: both; */
+  height: 11rem;
+}
+
+.logo-light {
+  width: 100px;
+  height: 27px;
+  margin: 46px 0 0 16.5rem;
+}
+
+.btn-footer:link,
+.btn-footer:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 28px;
+
+  padding: 14px 27px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+
+  margin: 3.8rem 16.5rem 2rem 0;
+  display: inline-block;
+}
+
+.btn-footer:hover,
+.btn-footer:active {
+  background: var(
+    --gradient-2-hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)
+  );
+}
