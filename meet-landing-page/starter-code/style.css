@@ -1,0 +1,196 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.icon {
+  margin: 8rem auto 11.8rem;
+}
+
+.headr {
+  font-size: 6.4rem;
+  font-weight: 900;
+  line-height: 6.4rem;
+  text-align: center;
+  color: #28283d;
+  margin: 0 49.8rem 0 49.7rem;
+}
+
+.headr-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #87879d;
+  margin: 3.4rem 47rem 3.2rem 45rem;
+}
+
+.btn-one:link,
+.btn-one:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4d96a9;
+  border-radius: 29px;
+
+  padding: 1.4rem 3.3rem;
+  /* margin-left: 546px; */
+  margin: 0 1.6rem 0 54.6rem;
+}
+
+.btn-one:hover,
+.btn-one:active {
+  background: #71c0d4;
+}
+
+.btn-one span {
+  color: #8fe3f9;
+  margin-left: 0.4rem;
+}
+
+.btn-two:link,
+.btn-two:visited {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #855fb1;
+  border-radius: 2.9rem;
+  padding: 1.4rem 3rem;
+}
+
+.btn-two:hover,
+.btn-two:active {
+  background-color: #b18bdd;
+}
+
+.img-left {
+  position: absolute;
+  top: 19.3rem;
+  left: -3.2rem;
+}
+
+.img-right {
+  position: absolute;
+  top: 23.2rem;
+  right: -3rem;
+}
+
+.page-one {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #87879d;
+}
+
+.icone-onePage {
+  /* margin-left: 700px; */
+  margin: 11.2rem 0 0 719px;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+
+  margin: 7.2rem 0 6.1rem 0;
+}
+
+.imges {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.built-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4d96a9;
+}
+
+.header-secondly {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+  text-align: center;
+  color: #28283d;
+  margin: 1.6rem 49.7rem 3.2rem 49.8rem;
+}
+
+.info-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #87879d;
+
+  margin: 0 43rem 17.1rem 43rem;
+}
+
+.number-2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #87879d;
+  margin-bottom: 10.3rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+
+  background-image: linear-gradient(
+      90deg,
+      rgba(86, 151, 170, 0.7),
+      rgba(86, 13, 99, 0.7)
+    ),
+    url(./assets/desktop/image-footer.jpg);
+}
+
+.flex-1 {
+  margin: 75px 0 98px 165px;
+}
+.flex-2 {
+  margin: 110px 255px 0 171px;
+}
+.flex-3 {
+  margin: 110px 165px 10px 10px;
+}
+
+.third-headr {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+  color: #fff;
+}
+
+.third-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #fff;
+}
+
+.btn-footer:link,
+.btn-footer:visited {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 29px;
+  padding: 20px 40px;
+  background-color: #3f7694;
+  display: inline-block;
+}
+
+.btn-footer:hover,
+.btn-footer:active {
+  background-color: #b18bdd;
+}
