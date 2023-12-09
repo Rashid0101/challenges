@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.background-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  margin: 5.7rem 0 0 16.5rem;
+}
+
+.header p {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 5.6rem 16.5rem 0 0;
+}
+
+.header h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  line-height: 8rem;
+  text-align: center;
+  color: #fff;
+  margin: 5.8rem 0 3.7rem 0;
+}
+
+.header a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #24053e;
+  background-color: #44ffa1;
+  display: inline-block;
+  padding: 16px 20px;
+  /* margin: 0 auto;  not working why??*/
+  margin-left: 640px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #24053e;
+  color: #44ffa1;
+  border: 1px solid #44ffa1;
+}
+
+.img-hero {
+  width: 702px;
+  position: absolute;
+  top: 422px;
+  left: 191px;
+}
+
+.img-pattern-1 {
+  position: absolute;
+  top: 70px;
+  left: -311px;
+}
+
+.img-pattern-2 {
+  position: absolute;
+  top: 260px;
+  right: -40px;
+}
+
+/* ***********************
+secondary
+***************************/
+
+.secondary {
+  position: relative;
+}
+
+.background-secondary {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  z-index: -5;
+}
+
+.informations {
+  width: 111.4rem;
+  color: #24053e;
+  display: flex;
+  gap: 2.6rem;
+  margin: 10.4rem auto;
+  text-align: center;
+}
+
+.info span {
+  font-size: 2.4rem;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #584d62;
+}
+
+.info h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 5.6rem;
+}
+
+.info p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-top: 2.8rem;
+  color: #584d62;
+}
+
+/* ***********************
+founder
+***************************/
+
+.founder {
+  position: relative;
+  margin-top: 45rem;
+}
+
+.img-founder {
+  width: 45rem;
+  position: absolute;
+
+  top: -167px;
+  left: 128px;
+  z-index: -1;
+}
+
+.founder-card {
+  width: 73rem;
+  background-color: #24053e;
+
+  margin-left: auto;
+  margin-right: 16.5rem;
+}
+
+.img-pattern-last {
+  width: 17.3rem;
+  position: absolute;
+  top: 280px;
+  right: 200px;
+}
+
+.founder-card h3 {
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 6.4rem 0 3.2rem 6.45rem;
+}
+
+.founder-card p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  line-height: 3.2rem;
+  color: #fff;
+  margin-left: 6.4rem;
+}
+
+.btn-founder:link,
+.btn-founder:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  color: #24053e;
+  background-color: #44ffa1;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 3.2rem 0 6.4rem 6.4rem;
+}
+
+.btn-founder:hover,
+.btn-founder:active {
+  color: #44ffa1;
+  background-color: #24053e;
+  border: 1px solid #44ffa1;
+}
+
+/* ***********************
+footer
+***************************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-footer {
+  margin-top: 12.18rem;
+}
+
+.icon-media {
+  margin: 5rem 11rem 0;
+}
+
+.icon-media img {
+  margin-left: 3rem;
+}
